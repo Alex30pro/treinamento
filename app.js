@@ -30,9 +30,11 @@ function menuSalao(){
 
     switch(opcao) {
         case '1':
+            const data = prompt('Qual a data do agendamento: ');
+            const horario = prompt('Qual o horário do agendamento: ');
             const idCliente = prompt('Qual o id do Cliente que deseja agendar: ');
             const idServico = prompt('Qual o id do Serviço que deseja agendar: ');
-            agendarServico({idCliente, idServico});
+            agendarServico({data, horario, idCliente, idServico});
             console.log('Agendamento adicionando com sucesso!');
             menuSalao();
             break;

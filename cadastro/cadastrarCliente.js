@@ -1,4 +1,4 @@
-let {clientes} = require('..data/');
+const {clientes} = require('../data');
 
 function cadastrarClientes(cadastrar) {
     cadastrar.id = clientes.length + 1;

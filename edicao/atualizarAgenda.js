@@ -1,4 +1,4 @@
-let {agendamentos} = require('..data/');
+const {agendamentos} = require('../data');
 
 function atualizarAgenda(id, novaAgenda){
     const index = agendamentos.findIndex(agenda => agenda.id === id);
